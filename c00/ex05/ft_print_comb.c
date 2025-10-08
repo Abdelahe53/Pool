@@ -4,21 +4,16 @@ int	main()
 {
 	int j = '0';
 	int k = '1';
-	int i = '2';
 
-while(j <= '7')
+while(j <= '8')
 	{
-	write(1, &j ,1);
-	while(k <= '8')
+	while(k <= '9')
 		{
+		write(1, &j, 1);
 		write(1, &k, 1);
-		while(i <= '9')
-			{
-			write(1, &i, 1);
-			j++;
-			}
+		write(1, ",", 1);
 		k++;
 		}
-	i++;
+	j++;
 	}
 }
