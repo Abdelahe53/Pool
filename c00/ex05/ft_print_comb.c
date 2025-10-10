@@ -3,17 +3,17 @@
 int	main()
 {
 	int j = '0';
-	int k = '1';
+	int a = '1';
+	int z = '0';
 
-while(j <= '8')
+while(j <= '9')
 	{
-	while(k <= '9')
-		{
-		write(1, &j, 1);
-		write(1, &k, 1);
-		write(1, ",", 1);
-		k++;
-		}
-	j++;
+	write(1, &j, 1);
+	while(z < '9')
+	{
+		write(1, &a, 1);
+		write(1, &z, 1);
+	z++;
 	}
+j++;}
 }
