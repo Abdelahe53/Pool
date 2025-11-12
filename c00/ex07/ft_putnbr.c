@@ -1,12 +1,19 @@
-#include <limits.h>
-#include <stdio.h>
+#include <unistd.h>
+
+void ft_putnbr(int nb)
+{
+	long double div;
+	long double temp;
+
+	if (nb <= 2147483647)
+	{
+		div = (2147483647 / nb) + '0';
+		temp = (2147483647 / div) + '0';
+		write(1, &temp, 10);
+	}
+}
 
 int main()
 {
-	printf("%d \n", INT_MAX);
-	printf("%d \n", INT_MIN);
+	ft_putnbr(4);
 }
-
- - Write() prints only one character,
- - To print multiple numbers using write you need a loop,
-	. Let the user be able to print the whole mximum number first
