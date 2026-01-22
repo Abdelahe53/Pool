@@ -1,19 +1,17 @@
+//INT_MAX: 2147483647
+//INT_MIN: 2147483648
+
 #include <unistd.h>
 
-void ft_putnbr(int nb)
+void main()
 {
-	long double div;
-	long double temp;
+    int n = 14;
+    if (n <= 2147483647)
+    {
+        
+    }
+    else
+    {
 
-	if (nb <= 2147483647)
-	{
-		div = (2147483647 / nb) + '0';
-		temp = (2147483647 / div) + '0';
-		write(1, &temp, 10);
-	}
-}
-
-int main()
-{
-	ft_putnbr(4);
+    }
 }
