@@ -2,16 +2,33 @@
 //INT_MIN: 2147483648
 
 #include <unistd.h>
+#include <stdio.h>
 
-void main()
+void ft_putnbr(int nb)
 {
-    int n = 14;
-    if (n <= 2147483647)
+    int rest;
+
+    if (nb == 2147483647)
+        write(1, "2147483647", 10);
+
+    else if (nb == -2147483648)
     {
-        
+        write(1, "-", 1);
+        write(1, "2147483648", 10);
+    }
+    else if (nb > 9)
+    {
+        nb = nb % 10 + '0';
+        write(1, &nb, 1);
+        ft_putnbr(nb);
     }
     else
     {
-
+        write(1, &nb, 1);
     }
+}
+
+int main()
+{
+    ft_putnbr(243);
 }
