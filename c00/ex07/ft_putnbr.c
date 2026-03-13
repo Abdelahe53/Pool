@@ -23,12 +23,3 @@ void ft_putnbr(int nb)
         ft_putnbr(nb * -1);
     }
 }
-
-int main()
-{
-    ft_putnbr(1223);
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> b86e2ea (a)
