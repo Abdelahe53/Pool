@@ -27,4 +27,8 @@ void ft_putnbr(int nb)
 int main()
 {
     ft_putnbr(1223);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b86e2ea (a)
