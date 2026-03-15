@@ -38,9 +38,9 @@ void	ft_print_comb(void)
 	{
 		if (n / 100 < n / 10 % 10 && n / 10 % 10 < n % 10)
 		{
-			ft_putchar(n / 100);
-			ft_putchar(n / 10 % 10);
-			ft_putchar(n % 10);
+			ft_putchar(n / 100); // = 0.00
+			ft_putchar(n / 10 % 10); // = 0.0
+			ft_putchar(n % 10); // = 0
 			if (!(n == 789))
 			write(1, ", ", 2);
 		}
