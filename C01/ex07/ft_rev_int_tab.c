@@ -1,23 +1,13 @@
-#include <unistd.h>
-#include <stdio.h>
-
 void ft_rev_int_tab(int *tab, int size)
 {
+	int i = 0;
 	int temp;
-	temp = size;
-	size = *tab;
-	tab = &temp;
 
-	while (tab[0] != size)
+	while (i <= (size - 1) / 2)
 	{
-		printf("%d ", tab[0]);
-		tab++;
+		temp = tab[i];
+		tab[i] = tab[size - i - 1];
+		tab[size - i - 1] = temp;
+		i = i + 1;
 	}
-}
-
-int main()
-{
-	int zab[] = {2, 1, 5, 10, 6};
-	int gza = sizeof(zab) / sizeof(zab[0]);
-	ft_rev_int_tab(zab, zab[gza - 1]);
 }
